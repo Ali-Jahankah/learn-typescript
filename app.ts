@@ -11,3 +11,4 @@ const returnNothing = (x: Combinable, y: string | boolean): undefined => {
   console.log(`This is ${x}`);
   return;
 };
+console.log("TEST");
