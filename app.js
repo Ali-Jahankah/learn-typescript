@@ -9,3 +9,9 @@ var returnNothing = function (x, y) {
     console.log("This is ".concat(x));
     return;
 };
+console.log("TEST");
+var acceptFunction;
+acceptFunction = function (a, b) {
+    return a + b;
+};
+console.log(acceptFunction("num1", true));
