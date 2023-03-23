@@ -67,3 +67,15 @@ const artist: Artist = {
 const editArtist: EditArtist = {
   id: 2,
 };
+interface IAnimal {
+  eat: boolean;
+}
+interface IDog extends IAnimal {
+  bark: boolean;
+}
+type CheckType = IDog extends IAnimal ? string : boolean;
+
+type IsString<T> = T extends string ? true : false;
+
+type TestString = IsString<string>;
+type TestNumber = IsString<number>;
